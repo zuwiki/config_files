@@ -27,3 +27,14 @@ def pbcopy(string)
   `echo "#{string}" | pbcopy`
   string
 end
+
+begin
+  require 'rubygems' rescue nil
+  require 'wirble'
+
+  Wirble.init
+  Wirble.colorize
+rescue LoadError => err
+  warn "Couldn't load Wirble: #{err}"
+end
+
