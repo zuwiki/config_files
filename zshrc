@@ -5,12 +5,17 @@ compinit
 # automatically enter directories without cd
 setopt auto_cd
 
-# use vim as an editor
-export EDITOR=vim
+# use TextMate as an editor
+export EDITOR='mate -w'
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
+fi
+
+# extra paths
+if [ -e "$HOME/.paths" ]; then
+  source "$HOME/.paths"
 fi
 
 # vi mode
