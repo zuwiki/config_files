@@ -5,8 +5,15 @@ compinit
 # automatically enter directories without cd
 setopt auto_cd
 
-# use TextMate as an editor
-export EDITOR='mate -w'
+# for editor, use gedit on linux and textmate on mac
+case `uname` in
+  Darwin)
+    export EDITOR='mate -w'
+    ;;
+  Linux)
+    export EDITOR='gedit'
+    ;;
+esac
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
