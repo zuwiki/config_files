@@ -10,7 +10,7 @@ esac
 alias gadd="git add -u && git add . && git status"
 alias g="git"
 alias r="rails"
-alias m="mvim"
+alias s="scribes"
 alias tu="ruby_test unit"
 alias tf="ruby_test functional"
 alias sm="ruby_spec models"
