@@ -1,3 +1,12 @@
+case `uname` in
+  Darwin)
+    alias ls='ls -FG'
+    ;;
+  Linux)
+    alias ls='ls -F --color=auto'
+    ;;
+esac
+
 alias gadd="git add -u && git add . && git status"
 alias g="git"
 alias r="rails"
