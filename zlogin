@@ -85,7 +85,7 @@ compdef _cucumber_features cuc
 
 # restore previous cwd
 if [[ -f ~/.last_cwd ]]; then
-  cd `cat ~/.last_cwd`
+  cd "`cat ~/.last_cwd`"
 fi
 _save_last_cwd() {
   echo `pwd` > ~/.last_cwd
