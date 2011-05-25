@@ -1,1 +1,1 @@
-export PATH=$PATH:$HOME/.cabal/bin:$HOME/bin:/var/lib/gems/1.8/bin:$HOME/.local/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.cabal/bin:$HOME/bin:/var/lib/gems/1.8/bin:$HOME/.local/bin:/usr/local/narwhal/bin
