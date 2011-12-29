@@ -138,7 +138,7 @@ set background=light
 colorscheme solarized
 
 " Font
-set guifont=Meslo\ LG\ M\ DZ:h11
+set guifont=Meslo\ LG\ M\ DZ:h12
 
 " Numbers
 set number
