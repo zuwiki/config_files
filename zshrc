@@ -8,20 +8,20 @@ setopt auto_cd
 # for editor, use gedit on linux and textmate on mac
 case `uname` in
   Darwin)
-    export EDITOR='mate -w'
+    export EDITOR='mvim'
     ;;
   Linux)
-    export EDITOR='gedit'
+    export EDITOR='gvim'
     ;;
 esac
 
 # aliases
-if [ -e "$HOME/.aliases" ]; then
+if [[ -e "$HOME/.aliases" ]]; then
   source "$HOME/.aliases"
 fi
 
 # extra paths
-if [ -e "$HOME/.paths" ]; then
+if [[ -e "$HOME/.paths" ]]; then
   source "$HOME/.paths"
 fi
 
@@ -46,4 +46,6 @@ export HISTSIZE=200
 # look for ey config in project dirs
 export EYRC=./.eyrc
 
-eval "$(rbenv init - )"
+if (( $+commands[rbenv] )); then
+    eval "$(rbenv init - )"
+fi
