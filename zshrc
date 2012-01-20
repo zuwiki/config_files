@@ -5,15 +5,7 @@ compinit
 # automatically enter directories without cd
 setopt auto_cd
 
-# for editor, use gedit on linux and textmate on mac
-case `uname` in
-  Darwin)
-    export EDITOR='mvim'
-    ;;
-  Linux)
-    export EDITOR='gvim'
-    ;;
-esac
+export EDITOR='vim'
 
 # aliases
 if [[ -e "$HOME/.aliases" ]]; then
@@ -140,3 +132,5 @@ _save_last_cwd() {
   echo `pwd` > ~/.last_cwd
 }
 chpwd_functions=( "${chpwd_functions[@]}" _save_last_cwd )
+
+export TERM=xterm-256color
