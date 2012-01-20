@@ -138,7 +138,7 @@ set background=light
 colorscheme solarized
 
 " Font
-set guifont=Meslo\ LG\ M\ DZ:h12
+set guifont=Inconsolata\ for\ Powerline:h12
 
 " Numbers
 set number
@@ -162,4 +162,6 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+
+set t_Co=256
 
