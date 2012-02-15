@@ -134,7 +134,7 @@ if executable("ack")
 endif
 
 " Color scheme
-set background=light
+set background=dark
 colorscheme solarized
 
 " Font
@@ -165,3 +165,4 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 set t_Co=256
 
+set clipboard=unnamed

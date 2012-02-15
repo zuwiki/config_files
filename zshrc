@@ -133,4 +133,3 @@ _save_last_cwd() {
 }
 chpwd_functions=( "${chpwd_functions[@]}" _save_last_cwd )
 
-export TERM=xterm-256color
