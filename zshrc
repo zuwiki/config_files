@@ -47,13 +47,17 @@ if (( $+commands[rbenv] )); then
 fi
 
 # restore previous cwd
-if [[ -f ~/.last_cwd ]]; then
-  cd "`cat ~/.last_cwd`"
-fi
+cdl() {
+    if [[ -f ~/.last_cwd ]]; then
+      cd "`cat ~/.last_cwd`"
+    fi
+}
 _save_last_cwd() {
   echo `pwd` > ~/.last_cwd
 }
 chpwd_functions=( "${chpwd_functions[@]}" _save_last_cwd )
+cdl
+alias cdl='nocorrect cdl'
 
 export EDITOR='vim'
 
