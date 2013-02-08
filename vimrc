@@ -14,13 +14,18 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'tpope/vim-fugitive'
+Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'lukerandall/haskellmode-vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
+Bundle 'AutoComplPop'
+Bundle 'go'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 
@@ -45,8 +50,8 @@ filetype plugin indent on
 set autoindent		" always set autoindenting on
 
 " Softtabs, 2 spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Always display the status line
@@ -61,9 +66,6 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
-
-" <Space> is the leader character
-let mapleader = " "
 
 " No Help, please
 nmap <F1> <Esc>
@@ -113,3 +115,5 @@ au Bufenter *.hs compiler ghc
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
 
+let g:neocomplcache_enable_at_startup = 1
+let g:EasyMotion_leader_key = '<Leader>' 
