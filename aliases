@@ -1,7 +1,6 @@
 case `uname` in
   Darwin)
     alias ls='ls -FG'
-    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
     ;;
   Linux)
     alias ls='ls -F --color=auto'

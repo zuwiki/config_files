@@ -1,5 +1,8 @@
-export GOPATH=$HOME/.go/
-export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$HOME/.cabal/bin:$HOME/.local/bin:/usr/local/narwhal/bin:/usr/local/mysql/bin:$GOPATH/bin:/usr/texbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.cabal/bin:$HOME/.local/bin:/usr/local/narwhal/bin:/usr/local/mysql/bin:$HOME/.rbenv/bin:$PATH
+export PATH=$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.rbenv/bin:$HOME/.rbenv/shims:/usr/local/share/python:$PATH
 export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 export PYTHONPATH=$HOME/Projects
 export FACTOR_ROOTS=$FACTOR_ROOTS:$HOME/Projects/vocabs
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages
+export PGDATA=/usr/local/var/postgres
+export GOPATH=$HOME/Projects/g
