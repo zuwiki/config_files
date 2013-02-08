@@ -11,7 +11,7 @@ ZSH_THEME="sunken_oats"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -42,9 +42,9 @@ if [[ -e "$HOME/.paths" ]]; then
   source "$HOME/.paths"
 fi
 
-if (( $+commands[rbenv] )); then
-    eval "$(rbenv init - )"
-fi
+#if (( $+commands[rbenv] )); then
+#    eval "$(rbenv init - )"
+#fi
 
 # restore previous cwd
 cdl() {

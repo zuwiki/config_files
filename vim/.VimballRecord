@@ -1,1 +1,2 @@
 snippy_plugin.vba: call delete('/Users/jferris/.vim/plugin/snippetsEmu.vim')|call delete('/Users/jferris/.vim/doc/snippets_emu.txt')
+haskellmode-20101118.vba: call delete('/Users/mvzink/.vim/compiler/ghc.vim')|call delete('/Users/mvzink/.vim/ftplugin/haskell.vim')|call delete('/Users/mvzink/.vim/ftplugin/haskell_doc.vim')|call delete('/Users/mvzink/.vim/ftplugin/haskell_hpaste.vim')|call delete('/Users/mvzink/.vim/autoload/haskellmode.vim')|call delete('/Users/mvzink/.vim/doc/haskellmode.txt')

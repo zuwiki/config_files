@@ -166,3 +166,8 @@ nnoremap <Down> :echoe "Use j"<CR>
 set t_Co=256
 
 set clipboard=unnamed
+
+" haskellmode config
+au Bufenter *.hs compiler ghc
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"

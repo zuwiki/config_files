@@ -1,9 +1,3 @@
-# print SQL to STDOUT
-if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
-  require 'logger'
-  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
-end
-
 # Autocomplete
 require 'irb/completion'
 
@@ -26,15 +20,5 @@ end
 def pbcopy(string)
   `echo "#{string}" | pbcopy`
   string
-end
-
-begin
-  require 'rubygems' rescue nil
-  require 'wirble'
-
-  Wirble.init
-  Wirble.colorize
-rescue LoadError => err
-  warn "Couldn't load Wirble: #{err}"
 end
 
