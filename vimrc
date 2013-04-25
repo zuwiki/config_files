@@ -4,6 +4,7 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -13,19 +14,20 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
+"Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
 Bundle 'lukerandall/haskellmode-vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
-" Bundle 'L9'
+Bundle 'L9'
 " Bundle 'FuzzyFinder'
-Bundle 'AutoComplPop'
-Bundle 'go'
+Bundle 'othree/vim-autocomplpop'
+Bundle 'The-NERD-Commenter'
+"Bundle 'othree/html5'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 
@@ -40,10 +42,8 @@ Bundle 'go'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-  set nohlsearch
-endif
+syntax on
+set nohlsearch
 
 filetype plugin indent on
 
@@ -117,3 +117,5 @@ let g:haddock_browser_callformat = "%s %s"
 
 let g:neocomplcache_enable_at_startup = 1
 let g:EasyMotion_leader_key = '<Leader>' 
+
+let g:NERDSpaceDelims = 1

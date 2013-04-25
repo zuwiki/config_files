@@ -60,4 +60,3 @@ cdl
 alias cdl='nocorrect cdl'
 
 export EDITOR='vim'
-
