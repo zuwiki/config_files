@@ -119,4 +119,3 @@ let g:EasyMotion_leader_key = '<Leader>'
 
 let g:NERDSpaceDelims = 1
 
-python3 'import vim'
