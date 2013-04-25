@@ -4,7 +4,6 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -18,7 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/powerline'
+"Bundle 'Lokaltog/powerline'
 Bundle 'lukerandall/haskellmode-vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
@@ -119,3 +118,5 @@ let g:neocomplcache_enable_at_startup = 1
 let g:EasyMotion_leader_key = '<Leader>' 
 
 let g:NERDSpaceDelims = 1
+
+python3 'import vim'
