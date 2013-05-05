@@ -17,7 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
-"Bundle 'Lokaltog/powerline'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'lukerandall/haskellmode-vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
@@ -72,9 +72,6 @@ nmap <F1> <Esc>
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
 
-" Display extra whitespace
-set list listchars=tab:»·,trail:·
-
 " Local config
 if filereadable(".vimrc.local")
   source .vimrc.local
@@ -91,6 +88,10 @@ colorscheme solarized
 
 " Font
 set guifont=Inconsolata\ for\ Powerline:h12
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
+highlight! link SpecialKey Comment
 
 " Numbers
 set number
