@@ -29,6 +29,7 @@ Bundle 'The-NERD-Commenter'
 "Bundle 'othree/html5'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'go'
 
 " Brief help
 " :BundleList          - list configured bundles
