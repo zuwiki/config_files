@@ -121,3 +121,5 @@ let g:EasyMotion_leader_key = '<Leader>'
 
 let g:NERDSpaceDelims = 1
 
+" instantaneous exit from insert
+set timeoutlen=1000 ttimeoutlen=10
