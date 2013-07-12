@@ -8,3 +8,4 @@ export FACTOR_ROOTS=$FACTOR_ROOTS:$HOME/Projects/vocabs
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages
 export PGDATA=/usr/local/var/postgres
 export GOPATH=$HOME/Projects/g
+export PATH=$GOPATH/bin:$PATH
