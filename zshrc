@@ -60,3 +60,19 @@ cdl
 alias cdl='nocorrect cdl'
 
 export EDITOR='vim'
+
+# thanks Jeroen Janssens (http://jeroenjanssens.com/)
+export MARKPATH=$HOME/.marks
+function jump { 
+    cd -P $MARKPATH/$1 2>/dev/null || echo "No such mark: $1"
+}
+function mark { 
+    mkdir -p $MARKPATH; ln -s $(pwd) $MARKPATH/$1
+}
+function unmark { 
+    rm -i $MARKPATH/$1 
+}
+function marks {
+    ls -l $MARKPATH | sed 's/  / /g' | cut -d' ' -f9- | awk '{gsub("@ -", "\t-",$0); print;}' && echo
+}
+
