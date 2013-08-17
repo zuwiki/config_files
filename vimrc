@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 "Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/neocomplcache'
+Bundle 'majutsushi/tagbar'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -123,3 +124,6 @@ let g:NERDSpaceDelims = 1
 
 " instantaneous exit from insert
 set timeoutlen=1000 ttimeoutlen=10
+
+nmap <F8> :TagbarToggle<CR>
+
